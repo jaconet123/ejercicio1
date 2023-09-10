@@ -33,6 +33,6 @@ for x in productos.keys():
    resultante[x]={
       'id': productos[x]['id'],
       'nombre': productos[x]['nombre'],
-      'categoria': categorias[x]['nombre']
+       'categoria': categorias[productos[x]['id_cat']]['nombre']
    }
 print(resultante)
